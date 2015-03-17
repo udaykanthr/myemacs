@@ -1,3 +1,5 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/labuser/.emacs.d/mylisp/gemacs-workspace.el" . 581)
- ("/home/labuser/.emacs.d/init.el" . 2869))
+(("/home/udaykanth/.emacs.d/"
+  (dired-filename . "/home/udaykanth/.emacs.d/init.el"))
+ ("/home/udaykanth/.emacs.d/init.el" . 91)
+ ("/home/udaykanth/.emacs.d/mylisp/gemacs-workspace.el" . 2987))

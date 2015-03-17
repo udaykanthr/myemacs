@@ -73,13 +73,12 @@
   (string-equal system-type "gnu/linux"))
 
 
-
- (require 'goog-defuns)
+(require 'goog-defuns)
 (require 'gemacs-appearance)
 (require 'gemacs-keyboard)
 (require 'gemacs-markdown)
 (require 'gemacs-git)
-;; (require 'gemacs-workspace)
+(require 'gemacs-workspace)
 ;;(require 'gemacs-editing)
 
 

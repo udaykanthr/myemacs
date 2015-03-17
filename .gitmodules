@@ -14,3 +14,15 @@
 	path = site-lisp/git-modes
 	url = https://github.com/magit/git-modes.git
 	branch = master
+[submodule "site-lisp/helm"]
+	path = site-lisp/helm
+	url = https://github.com/emacs-helm/helm.git
+	branch = master
+[submodule "site-lisp/emacs-async"]
+	path = site-lisp/emacs-async
+	url = git@github.com:jwiegley/emacs-async.git
+	branch = master
+[submodule "site-lisp/switch-window"]
+	path = site-lisp/switch-window
+	url = https://github.com/dimitri/switch-window.git
+	branch = master
