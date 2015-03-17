@@ -1,0 +1,16 @@
+[submodule "site-lisp/powerline"]
+	path = site-lisp/powerline
+	url = https://github.com/milkypostman/powerline.git
+	branch = master
+[submodule "site-lisp/monokai-emacs"]
+	path = site-lisp/monokai-emacs
+	url = https://github.com/oneKelvinSmith/monokai-emacs.git
+	branch = master
+[submodule "site-lisp/magit"]
+	path = site-lisp/magit
+	url = https://github.com/magit/magit.git
+	branch = master
+[submodule "site-lisp/git-modes"]
+	path = site-lisp/git-modes
+	url = https://github.com/magit/git-modes.git
+	branch = master
