@@ -53,8 +53,13 @@
 
 (require 'linum+)
 
+
 (defun linum-format-func (line)
   (let ((w (length (number-to-string (count-lines (point-min) (point-max))))))
+       ;; (concat
+       ;;    (propertize (make-string (- w (length (number-to-string line))) ?0)    ;;; TODO: make sure to add leading zeros before small numbers.
+       ;;                'face 'linum-leading-zero)
+       ;;    (propertize (number-to-string line) 'face 'linum))
      (propertize (format (format "| %%%dd | " w) line) 'face 'linum)))
 (setq linum-format 'linum-format-func)
 
@@ -191,7 +196,7 @@
 
 ;; Now set the default theme.
 (when window-system
-  (require 'golokai-theme)
+  (require 'monokai-theme)
   )
 (require 'powerline)
 (powerline-default-theme)

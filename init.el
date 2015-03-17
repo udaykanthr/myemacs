@@ -75,9 +75,19 @@
 
 
  (require 'goog-defuns)
- (require 'gemacs-appearance)
+(require 'gemacs-appearance)
+(require 'gemacs-keyboard)
+(require 'gemacs-markdown)
+(require 'gemacs-git)
 ;; (require 'gemacs-workspace)
 ;;(require 'gemacs-editing)
+
+
+;;    (add-to-list 'load-path "~/Emacs/emmet/")
+   (require 'emmet-mode)
+   (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+   (add-hook 'html-mode-hook 'emmet-mode)
+   (add-hook 'css-mode-hook  'emmet-mode)
 
 ;; ----------------------------------------------------------------------
 ;; Define automatic mode detection for file types.
