@@ -1,7 +1,0 @@
-;;; -*- coding: utf-8 -*-
-(("/home/udaykanth/.emacs.d/init.el" . 91)
- ("/home/udaykanth/.emacs.d/mylisp/gemacs-workspace.el" . 3616)
- ("/home/udaykanth/.emacs.d/.ido.last" . 1528)
- ("/home/udaykanth/.emacs.d/recentf" . 369)
- ("/home/udaykanth/.emacs.d/"
-  (dired-filename . "/home/udaykanth/.emacs.d/init.el")))
