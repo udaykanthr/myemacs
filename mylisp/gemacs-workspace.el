@@ -53,8 +53,8 @@
      (ido-find-file-in-dir default-directory))))
 
 (setq find-file-wildcards t)
-(eval-after-load "ido"
-  '(progn
+;;(eval-after-load "ido"
+  (progn
      (ido-mode t)
      (eval-after-load "ido-ubiquitous"
        '(progn
@@ -80,7 +80,8 @@
        (define-key ido-completion-map (kbd "<down>") 'ido-next-match)
        )
      (add-hook 'ido-setup-hook 'goog/config/ido-mode/cycle-with-up-and-down-arrow-keys)
-     ))
+     )
+  ;;)
 
 ;; ----------------------------------------------------------------------
 ;; Finding files, recent files and sessions.
