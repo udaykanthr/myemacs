@@ -101,6 +101,11 @@
 
 (require 'js2-mode)
 
+(require 'ajc-java-complete-config)
+(add-hook 'java-mode-hook 'ajc-java-complete-mode)
+(add-hook 'find-file-hook 'ajc-4-jsp-find-file-hook)
+;; read ajc-java-complete-config.el  for more info .
+
 ;; ----------------------------------------------------------------------
 ;; Define automatic mode detection for file types.
 ;; ----------------------------------------------------------------------

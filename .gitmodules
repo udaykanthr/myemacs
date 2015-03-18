@@ -50,3 +50,7 @@
 	path = site-lisp/popup-el
 	url = https://github.com/auto-complete/popup-el.git
 	branch = master
+[submodule "site-lisp/auto-java-complete"]
+	path = site-lisp/auto-java-complete
+	url = https://github.com/emacs-java/auto-java-complete.git
+	branch = master
