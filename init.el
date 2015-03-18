@@ -94,6 +94,7 @@
 (require 'expand-region)
 (global-set-key (kbd "M-8") 'er/expand-region)
 
+(require 'js2-mode)
 
 ;; ----------------------------------------------------------------------
 ;; Define automatic mode detection for file types.
