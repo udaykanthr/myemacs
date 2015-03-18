@@ -42,3 +42,11 @@
 	path = site-lisp/js2-mode
 	url = https://github.com/mooz/js2-mode.git
 	branch = master
+[submodule "site-lisp/auto-complete"]
+	path = site-lisp/auto-complete
+	url = https://github.com/auto-complete/auto-complete.git
+	branch = master
+[submodule "site-lisp/popup-el"]
+	path = site-lisp/popup-el
+	url = https://github.com/auto-complete/popup-el.git
+	branch = master
