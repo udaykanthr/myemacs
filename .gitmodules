@@ -34,3 +34,11 @@
 	path = snippets
 	url = https://github.com/AndreaCrotti/yasnippet-snippets.git
 	branch = master
+[submodule "site-lisp/expand-region"]
+	path = site-lisp/expand-region
+	url = https://github.com/magnars/expand-region.el.git
+	branch = master
+[submodule "site-lisp/js2-mode"]
+	path = site-lisp/js2-mode
+	url = https://github.com/mooz/js2-mode.git
+	branch = master

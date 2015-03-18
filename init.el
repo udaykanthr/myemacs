@@ -90,6 +90,11 @@
    (add-hook 'html-mode-hook 'emmet-mode)
    (add-hook 'css-mode-hook  'emmet-mode)
 
+
+(require 'expand-region)
+(global-set-key (kbd "M-8") 'er/expand-region)
+
+
 ;; ----------------------------------------------------------------------
 ;; Define automatic mode detection for file types.
 ;; ----------------------------------------------------------------------
