@@ -29,8 +29,17 @@
 (require 'helm-config)
 (helm-mode 1)
 
-(autoload 'nav "nav" nil t)
-(global-set-key (kbd "C-x C-a") 'nav)
+(require 'nav)
+(defun show-nav ()
+  "Show navbar with linum-mode disabled."
+  (interactive )
+
+    (nav-toggle)
+    ;; (linum-mode)
+
+  )
+;; (autoload 'nav "nav" nil t)
+(global-set-key (kbd "C-x C-a") 'show-nav)
 
 ;; (require 'ack-and-a-half)
 ;; ;; Create shorter aliases
