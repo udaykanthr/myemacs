@@ -1,4 +1,5 @@
 *~
+*.dat
 session.*
 .ido*
 places

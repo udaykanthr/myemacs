@@ -101,13 +101,31 @@
 
 (require 'js2-mode)
 
-(require 'ajc-java-complete-config)
-(add-hook 'java-mode-hook 'ajc-java-complete-mode)
-(add-hook 'find-file-hook 'ajc-4-jsp-find-file-hook)
+;; (require 'ajc-java-complete-config)
+;; (add-hook 'java-mode-hook 'ajc-java-complete-mode)
+;; (add-hook 'find-file-hook 'ajc-4-jsp-find-file-hook)
 ;; read ajc-java-complete-config.el  for more info .
 
+(require 'fill-column-indicator)
+;; (setq fci-rule-color "grey")
+(setq fci-rule-width 2)
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode 1)
+
+(setq fci-rule-column 80)
+
+;; (require 'highlight-80+)
+;; ;; (add-hook fundamental-mode-hook (lambda () (highlight-80+-mode 1)))
+;; (add-hook 'text-mode-hook 'highlight-80+-mode)
+;; (progn
+;;   (highlight-80+-mode t)
+;;   )
+
+
+;; (define-globalized-minor-mode highlight-80+-mode  highlight-80+-mode highlight-80+-mode)
+;; (add-hook 'emacs-lisp-mode-hook '(lambda () (highlight-lines-matching-regexp ".\{81\}" "hi-green-b")))
 ;; ----------------------------------------------------------------------
-;; Define automatic mode detection for file types.
+;; define automatic mode detection for file types.
 ;; ----------------------------------------------------------------------
 (setq auto-mode-alist
       (append '(
