@@ -112,6 +112,34 @@
 ;; (add-hook 'java-mode-hook 'ajc-java-complete-mode)
 ;; (add-hook 'find-file-hook 'ajc-4-jsp-find-file-hook)
 ;; read ajc-java-complete-config.el  for more info .
+;; (require 's)
+(require 'eclim)
+(global-eclim-mode)
+
+(custom-set-variables
+  '(eclim-eclipse-dirs '("~/Downloads/sts-bundle/sts-3.6.3.SR1"))
+  '(eclim-executable "~/Downloads/sts-bundle/sts-3.6.3.SR1/eclim")
+  )
+
+(setq help-at-pt-display-when-idle t)
+(setq help-at-pt-timer-delay 0.1)
+(help-at-pt-set-timer)
+
+;; regular auto-complete initialization
+(require 'auto-complete-config)
+(ac-config-default)
+
+;; add the emacs-eclim source
+(require 'ac-emacs-eclim-source)
+(ac-emacs-eclim-config)
+
+(require 'company)
+(require 'company-emacs-eclim)
+(company-emacs-eclim-setup)
+(global-company-mode t)
+
+(require 'eclimd)
+
 
 (require 'fill-column-indicator)
 ;; (setq fci-rule-color "grey")

@@ -65,3 +65,11 @@
 	path = site-lisp/smex
 	url = https://github.com/nonsequitur/smex.git
 	branch = master
+[submodule "site-lisp/emacs-eclim"]
+	path = site-lisp/emacs-eclim
+	url = https://github.com/senny/emacs-eclim.git
+	branch = master
+[submodule "site-lisp/company-mode"]
+	path = site-lisp/company-mode
+	url = https://github.com/company-mode/company-mode.git
+	branch = master
