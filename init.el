@@ -94,7 +94,7 @@
 ;;(require 'gemacs-editing)
 
 (require 'yasnippet)
-(yas-global-mode 1)
+;;(yas-global-mode 1)
 
 ;;    (add-to-list 'load-path "~/Emacs/emmet/")
    (require 'emmet-mode)
