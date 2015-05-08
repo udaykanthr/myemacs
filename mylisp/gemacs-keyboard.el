@@ -7,7 +7,7 @@
 ;; Reload the user init file.
 ;; (global-set-key (kbd "C-.") 'goog/elisp/reload-configuration)
 
-(global-set-key (kbd "M-x") 'smex-major-mode-commands)
+(global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
 
