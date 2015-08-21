@@ -196,7 +196,7 @@
 
 ;; Now set the default theme.
 (when window-system
-  (require 'monokai-theme)
+  (require 'burp-theme)
   )
 (require 'powerline)
 (powerline-default-theme)
