@@ -113,13 +113,13 @@
 ;; (add-hook 'find-file-hook 'ajc-4-jsp-find-file-hook)
 ;; read ajc-java-complete-config.el  for more info .
 ;; (require 's)
-(require 'eclim)
-(global-eclim-mode)
+;; (require 'eclim)
+;; (global-eclim-mode)
 
-(custom-set-variables
-  '(eclim-eclipse-dirs '("~/Downloads/sts-bundle/sts-3.6.3.SR1"))
-  '(eclim-executable "~/Downloads/sts-bundle/sts-3.6.3.SR1/eclim")
-  )
+;; (custom-set-variables
+;;   '(eclim-eclipse-dirs '("~/Downloads/sts-bundle/sts-3.7.0.RELEASE"))
+;;   '(eclim-executable "~/Downloads/sts-bundle/sts-3.7.0.RELEASE/eclim")
+;;   )
 
 (setq help-at-pt-display-when-idle t)
 (setq help-at-pt-timer-delay 0.1)
@@ -130,15 +130,15 @@
 (ac-config-default)
 
 ;; add the emacs-eclim source
-(require 'ac-emacs-eclim-source)
-(ac-emacs-eclim-config)
+;; (require 'ac-emacs-eclim-source)
+;; (ac-emacs-eclim-config)
 
-(require 'company)
-(require 'company-emacs-eclim)
-(company-emacs-eclim-setup)
-(global-company-mode t)
+;; (require 'company)
+;; (require 'company-emacs-eclim)
+;; (company-emacs-eclim-setup)
+;; (global-company-mode t)
 
-(require 'eclimd)
+;; (require 'eclimd)
 
 
 (require 'fill-column-indicator)
@@ -203,6 +203,7 @@
                 ("\\.markdown\\'" . markdown-mode)
                 ("\\.md\\'" . markdown-mode)
 
+                ("\\.c\\'" . c-mode)
                 ;; SQL mode.
                 ;; ("\\.mysql$" . sql-mode)
 
