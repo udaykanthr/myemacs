@@ -196,7 +196,7 @@
 
 ;; Now set the default theme.
 (when window-system
-  (require 'badwolf-theme)
+  (require 'blackboard-theme)
   )
 (require 'powerline)
 (powerline-default-theme)

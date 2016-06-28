@@ -76,3 +76,6 @@
 [submodule "site-lisp/badwolf-emacs"]
 	path = site-lisp/badwolf-emacs
 	url = git@github.com:bkruczyk/badwolf-emacs.git
+[submodule "site-lisp/blackboard-theme"]
+	path = site-lisp/blackboard-theme
+	url = git@github.com:don9z/blackboard-theme.git
