@@ -214,4 +214,39 @@
 
 
 
+(require 'smtpmail)
+(require 'starttls)
 
+(setq message-send-mail-function 'smtpmail-send-it)
+(defun gnutls-available-p ()
+  "Function redefined in order not to use built-in GnuTLS support"
+  nil)
+(setq starttls-gnutls-program "gnutls-cli")
+(setq starttls-use-gnutls t)
+(setq smtpmail-stream-type 'starttls)
+(setq starttls-extra-arguments '("--priority" "NORMAL:%COMPAT"))
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(send-mail-function (quote smtpmail-send-it))
+ '(smtpmail-smtp-server "smtp.gmail.com")
+ '(smtpmail-smtp-service 587))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+ ;; (setenv "MAILHOST" "pop.gmail.com")
+ ;; (setq rmail-primary-inbox-list '("pop://udaykanth.rapeti:cdqkgujmqefsstgp@pop.gmail.com")
+ ;;       rmail-pop-password-required t)
+
+(setq gnus-select-method
+      '(nnimap "gmail"
+	       (nnimap-address "imap.gmail.com")  ; it could also be imap.googlemail.com if that's your server.
+	       (nnimap-server-port "imaps")
+	       (nnimap-stream ssl)))
