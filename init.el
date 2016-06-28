@@ -93,8 +93,8 @@
 (ac-config-default)
 ;;(require 'gemacs-editing)
 
-(add-to-list 'load-path
-              "~/.emacs.d/site-lisp/yasnippet")
+;; (add-to-list 'load-path
+;;               "~/.emacs.d/site-lisp/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
 

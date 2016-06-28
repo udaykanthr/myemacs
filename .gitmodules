@@ -26,10 +26,6 @@
 	path = site-lisp/switch-window
 	url = https://github.com/dimitri/switch-window.git
 	branch = master
-[submodule "snippets"]
-	path = snippets
-	url = https://github.com/AndreaCrotti/yasnippet-snippets.git
-	branch = master
 [submodule "site-lisp/expand-region"]
 	path = site-lisp/expand-region
 	url = https://github.com/magnars/expand-region.el.git
@@ -75,3 +71,9 @@
 [submodule "site-lisp/blackboard-theme"]
 	path = site-lisp/blackboard-theme
 	url = git@github.com:don9z/blackboard-theme.git
+[submodule "site-lisp/yasnippet2"]
+	path = site-lisp/yasnippet2
+	url = https://github.com/capitaomorte/yasnippet
+[submodule "site-lisp/auto-complete2"]
+	path = site-lisp/auto-complete2
+	url = https://github.com/auto-complete/auto-complete.git
