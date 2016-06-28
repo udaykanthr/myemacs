@@ -194,10 +194,27 @@
     (";" 0 font-lock-end-statement-face)))
 
 
-;; Now set the default theme.
-(when window-system
-  (require 'blackboard-theme)
-  )
+;;Now set the default theme.              ;
+;; (when window-system
+;;   (require 'blackboard-theme)
+;;   )
+
+(require 'blackboard-theme)
+
+;; (if (daemonp)
+;;     (add-hook 'after-make-frame-functions
+;;               (lambda (frame)
+;;                 (load-theme 'blackboard-theme t)))
+;;   (load-theme 'blackboard-theme t))
+
+;; (if (daemonp)
+;; (add-hook 'after-make-frame-functions
+;;           '(lambda (f)
+;;              (with-selected-frame f
+;;                (when (window-system f) (require blackboard-theme)))))
+;; (require blackboard-theme))
+
+
 (require 'powerline)
 (powerline-default-theme)
 
