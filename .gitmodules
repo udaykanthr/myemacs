@@ -73,3 +73,6 @@
 	path = site-lisp/company-mode
 	url = https://github.com/company-mode/company-mode.git
 	branch = master
+[submodule "site-lisp/badwolf-emacs"]
+	path = site-lisp/badwolf-emacs
+	url = git@github.com:bkruczyk/badwolf-emacs.git

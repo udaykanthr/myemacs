@@ -196,7 +196,7 @@
 
 ;; Now set the default theme.
 (when window-system
-  (require 'burp-theme)
+  (require 'badwolf-theme)
   )
 (require 'powerline)
 (powerline-default-theme)
