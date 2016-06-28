@@ -96,6 +96,11 @@
 ;; (add-to-list 'load-path
 ;;               "~/.emacs.d/site-lisp/yasnippet")
 (require 'yasnippet)
+(setq yas-snippet-dirs
+      '("~/.emacs.d/snippets"                 ;; personal snippets
+        "~/.emacs.d/site-lisp/yasnippet2/yasmate/snippets" ;; the yasmate collection
+        "~/.emacs.d/site-lisp/yasnippet2/snippets"         ;; the default collection
+        ))
 (yas-global-mode 1)
 
 ;;    (add-to-list 'load-path "~/Emacs/emmet/")
