@@ -24,7 +24,7 @@
 ;;; This file is NOT a part of GNU Emacs.
 ;;; The goal of this repo is to install emacs plugins without using package installers (Melpa, elget)
 ;;; as some corp networks are not permitted to access those packages installer links.
-;;
+;; change test
 
 (set-locale-environment "en_US.UTF-8")
 
