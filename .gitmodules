@@ -26,10 +26,6 @@
 	path = site-lisp/switch-window
 	url = https://github.com/dimitri/switch-window.git
 	branch = master
-[submodule "site-lisp/yasnippet"]
-	path = site-lisp/yasnippet
-	url = https://github.com/capitaomorte/yasnippet
-	branch = master
 [submodule "snippets"]
 	path = snippets
 	url = https://github.com/AndreaCrotti/yasnippet-snippets.git
