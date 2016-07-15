@@ -77,3 +77,6 @@
 [submodule "site-lisp/auto-complete2"]
 	path = site-lisp/auto-complete2
 	url = https://github.com/auto-complete/auto-complete.git
+[submodule "site-lisp/markdown"]
+	path = site-lisp/markdown
+	url = https://github.com/jrblevin/markdown-mode.git

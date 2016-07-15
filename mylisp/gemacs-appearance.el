@@ -193,13 +193,13 @@
   '(("\\([][|!.+=&/%*,<>(){}:^~-]+\\)" 1 font-lock-operator-face)
     (";" 0 font-lock-end-statement-face)))
 
-
+(require 'burp-theme)
 ;;Now set the default theme.              ;
-;; (when window-system
-;;   (require 'blackboard-theme)
-;;   )
+(when window-system
+  (require 'blackboard-theme)
+  )
 
-(require 'blackboard-theme)
+
 
 ;; (if (daemonp)
 ;;     (add-hook 'after-make-frame-functions
