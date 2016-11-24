@@ -127,6 +127,11 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
+;; company complete
+(global-set-key (kbd "M-s TAB") 'company-complete)
+(global-set-key (kbd "M-f9") 'recompile)
+(global-set-key (kbd "C-f9") 'compile)
+
 (provide 'gemacs-keyboard)
 
 ;;; gemacs-keyboard.el ends here

@@ -88,9 +88,9 @@
 (require 'gemacs-markdown)
 (require 'gemacs-git)
 (require 'gemacs-workspace)
-(require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(ac-config-default)
+;; (require 'auto-complete-config)
+;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+;; (ac-config-default)
 ;;(require 'gemacs-editing)
 
 ;; (add-to-list 'load-path
@@ -133,8 +133,8 @@
 (help-at-pt-set-timer)
 
 ;; regular auto-complete initialization
-(require 'auto-complete-config)
-(ac-config-default)
+;; (require 'auto-complete-config)
+;; (ac-config-default)
 
 ;; add the emacs-eclim source
 ;; (require 'ac-emacs-eclim-source)
@@ -221,40 +221,43 @@
 
 
 
-(require 'smtpmail)
-(require 'starttls)
+;; (require 'smtpmail)
+;; (require 'starttls)
 
-(setq message-send-mail-function 'smtpmail-send-it)
-(defun gnutls-available-p ()
-  "Function redefined in order not to use built-in GnuTLS support"
-  nil)
-(setq starttls-gnutls-program "gnutls-cli")
-(setq starttls-use-gnutls t)
-(setq smtpmail-stream-type 'starttls)
-(setq starttls-extra-arguments '("--priority" "NORMAL:%COMPAT"))
+;; (setq message-send-mail-function 'smtpmail-send-it)
+;; (defun gnutls-available-p ()
+;;   "Function redefined in order not to use built-in GnuTLS support"
+;;   nil)
+;; (setq starttls-gnutls-program "gnutls-cli")
+;; (setq starttls-use-gnutls t)
+;; (setq smtpmail-stream-type 'starttls)
+;; (setq starttls-extra-arguments '("--priority" "NORMAL:%COMPAT"))
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(magit-diff-options nil)
- '(send-mail-function (quote smtpmail-send-it))
- '(smtpmail-smtp-server "smtp.gmail.com")
- '(smtpmail-smtp-service 587))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+;; (custom-set-variables
+;;  ;; custom-set-variables was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(magit-diff-options nil)
+;;  '(send-mail-function (quote smtpmail-send-it))
+;;  '(smtpmail-smtp-server "smtp.gmail.com")
+;;  '(smtpmail-smtp-service 587))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  )
 
- ;; (setenv "MAILHOST" "pop.gmail.com")
- ;; (setq rmail-primary-inbox-list '("pop://udaykanth.rapeti:cdqkgujmqefsstgp@pop.gmail.com")
- ;;       rmail-pop-password-required t)
+;;  ;; (setenv "MAILHOST" "pop.gmail.com")
+;;  ;; (setq rmail-primary-inbox-list '("pop://udaykanth.rapeti:cdqkgujmqefsstgp@pop.gmail.com")
+;;  ;;       rmail-pop-password-required t)
 
-(setq gnus-select-method
-      '(nnimap "gmail"
-	       (nnimap-address "imap.gmail.com")  ; it could also be imap.googlemail.com if that's your server.
-	       (nnimap-server-port "imaps")
-	       (nnimap-stream ssl)))
+;; (setq gnus-select-method
+;;       '(nnimap "gmail"
+;; 	       (nnimap-address "imap.gmail.com")  ; it could also be imap.googlemail.com if that's your server.
+;; 	       (nnimap-server-port "imaps")
+;; 	       (nnimap-stream ssl)))
+
+(require 'company)
+(add-hook 'after-init-hook 'global-company-mode)
