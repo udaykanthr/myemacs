@@ -129,8 +129,8 @@
 
 ;; company complete
 (global-set-key (kbd "M-s TAB") 'company-complete)
-(global-set-key (kbd "M-f9") 'recompile)
-(global-set-key (kbd "C-f9") 'compile)
+(global-set-key (kbd "M-<f9>") 'recompile)
+(global-set-key (kbd "C-<f9>") 'compile)
 
 (provide 'gemacs-keyboard)
 
