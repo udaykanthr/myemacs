@@ -80,3 +80,12 @@
 [submodule "site-lisp/markdown"]
 	path = site-lisp/markdown
 	url = https://github.com/jrblevin/markdown-mode.git
+[submodule "site-lisp/zerodark-theme"]
+	path = site-lisp/zerodark-theme
+	url = git@github.com:NicolasPetton/zerodark-theme.git
+[submodule "site-lisp/all-the-icons"]
+	path = site-lisp/all-the-icons
+	url = git@github.com:domtronn/all-the-icons.el.git
+[submodule "site-lisp/dash"]
+	path = site-lisp/dash
+	url = git@github.com:magnars/dash.el.git

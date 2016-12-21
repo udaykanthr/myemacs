@@ -193,7 +193,7 @@
   '(("\\([][|!.+=&/%*,<>(){}:^~-]+\\)" 1 font-lock-operator-face)
     (";" 0 font-lock-end-statement-face)))
 
-(require 'burp-theme)
+(require 'zerodark-theme)
 ;;Now set the default theme.              ;
 (when window-system
   (require 'blackboard-theme)

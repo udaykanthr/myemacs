@@ -74,7 +74,7 @@
   (interactive)
   (string-equal system-type "gnu/linux"))
 
-
+;; (require 'all-the-icons)
 
 
 (require 'smex) ; Not needed if you use package.el
