@@ -217,6 +217,7 @@
 
 (require 'powerline)
 (powerline-default-theme)
+;; (zerodark-setup-modeline-format)
 
 
 (provide 'gemacs-appearance)
